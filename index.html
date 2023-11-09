@@ -11,9 +11,13 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+      
+
 </head>
 
 <body>
+
+ 
 
     <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore facilis earum sit magni asperiores
         temporibus velit animi officiis nesciunt, recusandae optio fugiat maiores exercitationem cumque, sequi atque
@@ -182,7 +186,100 @@
       <li><a class="dropdown-item" href="#">Link 3</a></li>
     </ul>
   </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum..
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <nav class="navbar navbar-expand-sm bg-dark text-white navbar-dark sticky-top">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam debitis cum similique nihil optio velit commodi beatae deleniti asperiores ipsum quod, sit atque tempore. Quas iusto laborum quam ad.
+    </nav>
+  
+  
+  <div class="tab-content">
+    <div class="tab-pane container active" id="home">...</div>
+    <div class="tab-pane container fade" id="menu1">...</div>
+    <div class="tab-pane container fade" id="menu2">...</div>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm bg-dark text-white navbar-dark fixed-top">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, quo illo tempora vitae sunt in ipsam neque hic, facilis, nostrum assumenda? Repudiandae perferendis temporibus fuga veritatis quibusdam ea odit cumque?
+  </nav>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">Hover over me!</button>
+
+
+  <div class="container mt-3">
+    <h3>Tooltip Positioning</h3>
+    <p>The data-bs-placement attribute specifies the tooltip position.</p>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button>
+  </div>
+
+
+
+  <script>
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+    </script>
 </body>
+
 
 
 </html>
